@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiktok</title>
+    <style>
+        body{
+            text-align: center;
+            background: #f1f1f1;
+        }
+
+        img{
+            width: 200px;
+            height: 400px;
+        }
+
+        section{
+            width: 20%;
+            /* box-shadow: 0 0 5px; */
+            margin: 70px auto;
+            border-radius: 20px;
+        }
+
+        h1{
+            font-size: 12px;
+            margin-top: 30px;
+        }
+
+        @keyframes slideToLeft{
+            from{
+                transform: translateX(-300px);
+            }
+            to{
+                transform: translateX(0);
+            }
+        }
+
+        img{
+            animation: slideToLeft 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Please Scan the SQR Code <br> below to follow me!</h1>
+        <img src="./SQR_CODE/Tiktok-SQR-Code.png">
+    </section>
+   
+</body>
+</html>

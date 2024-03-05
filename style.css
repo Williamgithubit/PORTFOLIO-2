@@ -1,0 +1,184 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+ 
+.container {
+    width: 400px;
+    height: 450px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    margin: 80px auto;
+    /* align-items: center; */
+    background-color: #dedee7;
+}
+
+.header {
+    width: 400px;
+    height: 180px;
+    background-image: linear-gradient(rgba(9, 0, 77, 0.65), rgba(9, 0, 77, 0.65)), url(./Background/texture-mapping-pattern-pattern-background-vector-pattern-4a83cbb52bdb01fff7ff8c572982d47b.png);
+    border-radius: 0px 0px 100px 100px;
+}
+
+
+.header .cycle {
+    width: 145px;
+    height: 145px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 9% 0px 0px 30%;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+.icon-row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.facebook,
+.whats-app,
+.instagram,
+.tiktok {
+    width: 200px;
+    height: 185px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    align-items: center;
+    margin: 20px 10px;
+    padding: 5px;
+    /* cursor: pointer; */
+    /* transition: 0.3s; */
+}
+
+p {
+    text-align: left;
+    font-size: 15px;
+}
+
+button {
+    margin-top: 20px;
+    align-content: center;
+
+}
+
+.fb-button {
+    cursor: pointer;
+    background-color: blue;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 2px;
+    transition: transform 0.5s ease 0s;
+}
+
+.fb-button:hover{
+    background-color: rgb(99, 147, 202);
+}
+
+.fb-button:active{
+    background: #9ab9f3;
+}
+
+
+.wp-button {
+    cursor: pointer;
+    background-color: rgb(33, 170, 6);
+    color: #fff;
+    border: none;
+    border-radius: 8px; 
+    padding: 2px 6px;
+    justify-content: center;
+    margin-left: 5px;
+}
+
+
+.wp-button:hover{
+    background-color: rgb(22, 100, 6);
+}
+
+.wp-button:active{
+    background: rgb(96, 126, 90);
+}
+
+.ig-button {
+    cursor: pointer;
+    background-color: #ec1a1a;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 2px 8px;
+    margin-left: 6px;
+}
+
+.ig-button:hover{
+    background-color: rgb(100, 9, 6);
+}
+
+.ig-button:active{
+    background: #ec1a1a;
+}
+
+.tk-button {
+    cursor: pointer;
+    background-color: #050303;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 2px 8px;
+    margin-left: 6px;
+}
+
+.tk-button:hover{
+    background-color: rgb(78, 76, 76);
+}
+
+.tk-button:active{
+    background: #573a3a;
+}
+
+footer {
+    background-color: gray;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    border-radius: 0px 0px 20px 20px;
+}
+
+@keyframes slideInLeft{
+    from{
+        transform: translateX(-50px);
+    }
+
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOutTop{
+    from{
+        transform: translateY(-100px);
+    }
+    to{
+        
+        transform: translateY(0);
+    }
+}
+
+.whats-app, .instagram{
+    animation: slideOutTop 1s ease;
+}
+
+.facebook, .tiktok{
+    animation: slideInLeft 1s ease;
+}
